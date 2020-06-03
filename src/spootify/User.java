@@ -21,7 +21,6 @@ public class User extends People {
      * does not contain whitespace
      */
     private String password;
-    protected Image avatar;
 
     // METHODS ______________________________________________________________________________________________
 
@@ -38,13 +37,12 @@ public class User extends People {
 
     // Complete constructor
     public User(String name, String country, String birth, String email, String password, Image avatar) {
-        super(name, country, birth); // uses the parent's constructor
+        super(name, country, birth, avatar); // uses the parent's constructor
 
-        // sets email, password and avatar
+        // sets email and password
         {
             setEmail(email);
             setPassword(password);
-            setAvatar(avatar);
         }
     }
 
@@ -78,16 +76,13 @@ public class User extends People {
             System.out.println("\tNo valid password entered.");
         }
     }
-
-    public void setAvatar(Image avatar){
-        this.avatar = avatar;
-    }
     
     // Other methods
-    public void showUserInfo(){
+    @Override
+    public void showInfo(){
         super.showInfo();
         System.out.println("\tEMAIL: " + this.getEmail());
         System.out.println("\tPASSWORD: " + this.getPassword() + "\n");
-    } // Prints the person's attributes
+    } // Prints the user's attributes
 
 }
