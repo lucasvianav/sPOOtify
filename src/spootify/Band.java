@@ -29,7 +29,6 @@ public class Band {
      * construtores que contemplem logo, musicalGenres e albums
      * incluir a puxada de instruments dos members nos construtores
      * incuir a puxada de musics dos albums no setAlbum
-     * métodos setters, getters e "add" de albums e logo
      * método showInfo()
      */
 
@@ -70,25 +69,27 @@ public class Band {
     }
 
     public ArrayList<Album> getAlbums(){
-
+        return this.albums;
     }
 
     public Album getAlbum(int index){
-
+        return this.albums.get(index);
     }
 
     public Album getAlbum(String albumName){
+        for(Album album : this.albums){
+            if (album.getName().equals(albumName)){
+                return album;
+            }
+        }
 
+        // System.out.println("That album doesn't belong to this band.");
+
+        return null;
     }
 
-    // Setters
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setMembers(ArrayList<Artist> members) {
-        this.members.clear();
-        this.members.addAll(members);
+    public Image getLogo(){
+        return this.logo;
     }
 
     public String getOriginYear() {
@@ -122,12 +123,23 @@ public class Band {
         return this.COUNTRY;
     }
 
-    public void setAlbums(ArrayList<Album> albums){
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setMembers(ArrayList<Artist> members) {
+        this.members.clear();
+        this.members.addAll(members);
+    }
+
+    public void setAlbums(ArrayList<Album> albums){
+        this.albums.clear();
+        this.albums.addAll(albums);
     }
 
     public void setLogo(Image logo){
-
+        this.logo = logo;
     }
 
     public void setMusicalGenres(ArrayList<Util.MusicalGenres> musicalGenres) {
