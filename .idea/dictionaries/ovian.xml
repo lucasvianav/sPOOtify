@@ -2,6 +2,7 @@
   <dictionary name="ovian">
     <words>
       <w>birthdate</w>
+      <w>musicalgenres</w>
     </words>
   </dictionary>
 </component>

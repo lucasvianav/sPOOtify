@@ -5,66 +5,51 @@ import java.util.List;
 import javafx.scene.image.Image;
 
 public abstract class AudioList {
-    
-    protected String name, description;
-    protected int length;
-    protected Image cover;
-    protected List<Music> musics;
 
-    public AudioList(String name, String description, Image cover, List<Music> musics) {
-        this.name = name;
-        this.description = description;
-        this.length = 0;
-        this.cover = cover;
-        
-        this.musics = new ArrayList<>();
-        musics.forEach((music) -> {
-            this.musics.add(music);
-        });
+    // ATTRIBUTES ___________________________________________________________________________________________
+
+    private int length = 0;
+    protected ArrayList<Music> tracks;
+
+    // METHODS ______________________________________________________________________________________________
+
+    // Constructor
+    public AudioList(ArrayList<Music> tracks){
+        this.setTracks(tracks);
     }
     
     // Getters
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
     public int getLength() {
         return length;
     }
 
-    public Image getCover() {
-        return cover;
-    }
-
-    public List<Music> getMusics() {
-        return musics;
+    public ArrayList<Music> getTracks() {
+        return tracks;
     }
     
     // Setters
-    public void setName(String name) {
-        this.name = name;
+    public void setTracks(ArrayList<Music> tracks) {
+        this.tracks.clear();
+        this.tracks.addAll(tracks);
+        this.setLength();
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    // gets the length from the tracks, so no argument needed
+    public void setLength(){
+        this.length = 0;
+        for (Music track : this.tracks){
+            this.length += track.getLenght();
+        }
     }
 
-    public void setCover(Image cover) {
-        this.cover = cover;
+    //Other methods
+    public void addLength(Music track){
+        this.length += track.getLenght();
     }
 
-    public void setMusics(List<Music> musics) {
-        while(this.musics.size() > 0)
-            this.musics.remove(0);
-        
-        musics.forEach((music) -> {
-            this.musics.add(music);
-            this.length += music.getLenght();
-        });
+    public void removeLength(Music track){
+        this.length -= track.getLenght();
     }
-    
+
+
 }

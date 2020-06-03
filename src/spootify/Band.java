@@ -21,16 +21,9 @@ public class Band {
     private ArrayList<Util.MusicalGenres> musicalGenres = new ArrayList<>();
     private ArrayList<String> instruments = new ArrayList<>();
     private ArrayList<Album> albums = new ArrayList<>();
-    private ArrayList<Music> musics = new ArrayList<>();
+    private ArrayList<Music> music = new ArrayList<>();
 
     // METHODS ______________________________________________________________________________________________
-
-    /** FALTA IMPLEMENTAR
-     * construtores que contemplem logo, musicalGenres e albums
-     * incluir a puxada de instruments dos members nos construtores
-     * incuir a puxada de musics dos albums no setAlbum
-     * método showInfo()
-     */
 
     // Basic constructor
     public Band(String name, ArrayList<Artist> members, String originYear, String originCountry) {
@@ -41,27 +34,183 @@ public class Band {
          * the if-else statement prevents from registering a band that was founded in the current year or later (in the future)
          */
         {
-            age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
-            if (age > 0) {
+            this.age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
+            if (this.age > 0) {
                 this.YEAR = LocalDate.parse(originYear);
                 age = Period.between(this.YEAR, LocalDate.now()).getYears();
             }
             else {
                 this.YEAR = null;
-                age = -1;
+                this.age = -1;
             }
         }
 
-        // sets name and members
+        // sets name, members and instruments
         {
-            setName(name);
-            setMembers(members);
+            this.setName(name);
+            this.setMembers(members);
+            this.setInstruments();
         }
+
+
+    }
+
+    // Album constructor
+    public Band(String name, ArrayList<Artist> members, String originYear, String originCountry, ArrayList<Album> albums) {
+        this.COUNTRY = originCountry;
+
+        /** storing the the origin year and calculating the age
+         * sets the age as the difference between the current date and the origin year
+         * the if-else statement prevents from registering a band that was founded in the current year or later (in the future)
+         */
+        {
+            this.age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
+            if (this.age > 0) {
+                this.YEAR = LocalDate.parse(originYear);
+                age = Period.between(this.YEAR, LocalDate.now()).getYears();
+            }
+            else {
+                this.YEAR = null;
+                this.age = -1;
+            }
+        }
+
+        // sets name, members, instruments, albums, tracks and genres
+        {
+            this.setName(name);
+            this.setMembers(members); // already sets members and instruments
+            this.setAlbums(albums); // already sets albums and tracks
+        }
+
+
+    }
+
+    // Logo constructor
+    public Band(String name, Image logo, ArrayList<Artist> members, String originYear, String originCountry) {
+        this.COUNTRY = originCountry;
+
+        /** storing the the origin year and calculating the age
+         * sets the age as the difference between the current date and the origin year
+         * the if-else statement prevents from registering a band that was founded in the current year or later (in the future)
+         */
+        {
+            this.age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
+            if (this.age > 0) {
+                this.YEAR = LocalDate.parse(originYear);
+                age = Period.between(this.YEAR, LocalDate.now()).getYears();
+            }
+            else {
+                this.YEAR = null;
+                this.age = -1;
+            }
+        }
+
+        // sets name, logo, members and instruments
+        {
+            this.setName(name);
+            this.setMembers(members); // already set members and instruments
+            this.setLogo(logo);
+        }
+
+
+    }
+
+    // Musical genres constructor
+    public Band(String name, ArrayList<Artist> members, ArrayList<Util.MusicalGenres> musicalGenres, String originYear, String originCountry) {
+        this.COUNTRY = originCountry;
+
+        /** storing the the origin year and calculating the age
+         * sets the age as the difference between the current date and the origin year
+         * the if-else statement prevents from registering a band that was founded in the current year or later (in the future)
+         */
+        {
+            this.age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
+            if (this.age > 0) {
+                this.YEAR = LocalDate.parse(originYear);
+                age = Period.between(this.YEAR, LocalDate.now()).getYears();
+            }
+            else {
+                this.YEAR = null;
+                this.age = -1;
+            }
+        }
+
+        // sets name, members, instruments and musical genres
+        {
+            this.setName(name);
+            this.setMembers(members); // already sets members and instruments
+            this.setMusicalGenres(musicalGenres);
+        }
+
+
+    }
+
+    // No logo constructor
+    public Band(String name, ArrayList<Artist> members, ArrayList<Util.MusicalGenres> musicalGenres, String originYear, String originCountry, ArrayList<Album> albums) {
+        this.COUNTRY = originCountry;
+
+        /** storing the the origin year and calculating the age
+         * sets the age as the difference between the current date and the origin year
+         * the if-else statement prevents from registering a band that was founded in the current year or later (in the future)
+         */
+        {
+            this.age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
+            if (this.age > 0) {
+                this.YEAR = LocalDate.parse(originYear);
+                age = Period.between(this.YEAR, LocalDate.now()).getYears();
+            }
+            else {
+                this.YEAR = null;
+                this.age = -1;
+            }
+        }
+
+        // sets name, logo, members, instruments, albums, tracks and musical genres
+        {
+            this.setName(name);
+            this.setMembers(members); // already sets members and instruments
+            this.setMusicalGenres(musicalGenres);
+            this.setAlbums(albums); // already sets albums and tracks
+        }
+
+
+    }
+
+    // Complete constructor
+    public Band(String name, Image logo, ArrayList<Artist> members, ArrayList<Util.MusicalGenres> musicalGenres, String originYear, String originCountry, ArrayList<Album> albums) {
+        this.COUNTRY = originCountry;
+
+        /** storing the the origin year and calculating the age
+         * sets the age as the difference between the current date and the origin year
+         * the if-else statement prevents from registering a band that was founded in the current year or later (in the future)
+         */
+        {
+            this.age = Period.between(LocalDate.parse(originYear), LocalDate.now()).getYears();
+            if (this.age > 0) {
+                this.YEAR = LocalDate.parse(originYear);
+                age = Period.between(this.YEAR, LocalDate.now()).getYears();
+            }
+            else {
+                this.YEAR = null;
+                this.age = -1;
+            }
+        }
+
+        // sets name, logo, members, instruments, albums, tracks and musical genres
+        {
+            this.setName(name);
+            this.setLogo(logo);
+            this.setMembers(members); // already sets members and instruments
+            this.setMusicalGenres(musicalGenres);
+            this.setAlbums(albums); // already sets albums and tracks
+        }
+
+
     }
 
     // Getters
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public ArrayList<Artist> getMembers() {
@@ -131,11 +280,14 @@ public class Band {
     public void setMembers(ArrayList<Artist> members) {
         this.members.clear();
         this.members.addAll(members);
+        this.setInstruments();
     }
 
     public void setAlbums(ArrayList<Album> albums){
         this.albums.clear();
         this.albums.addAll(albums);
+        this.setMusic(); // refreshes the tracks
+        this.setMusicalGenres(); // refreshes the genres
     }
 
     public void setLogo(Image logo){
@@ -146,11 +298,47 @@ public class Band {
         this.musicalGenres.clear();
         this.musicalGenres.addAll(musicalGenres);
     }
+
+    // gets the genres from the albums, so no argument needed
+    public void setMusicalGenres(){
+        // doesn't lear the genres ArrayList, so the intent is to only add new genres present on the albums, if any
+        for(Album album : this.albums){
+            for(Util.MusicalGenres genre : album.getMusicalGenres()){
+                if(!this.musicalGenres.contains(genre)){
+                    this.musicalGenres.add(genre);
+                }
+            }
+        }
+    }
+
+    // gets the instruments from the members, so no argument needed
+    public void setInstruments(){
+        this.instruments.clear(); // clears the instruments ArrayList, leaving it empty
+        for(Artist member : this.members){ // loops through the band's members in order to check their instruments
+            for(String instrument :  member.getInstruments()){ // loops through each member's instruments
+                if(!this.instruments.contains(instrument)){ // if the instrument isn't in the ArrayList already, add it
+                    this.instruments.add(instrument);
+                }
+            }
+        }
+    }
+
+    // gets all the music from the albums, so no argument needed
+    public void setMusic(){
+        this.music.clear();
+        for(Album album : this.albums){
+            for(Music track : album.getTracks()){
+                if(!this.music.contains(track)){
+                    this.music.add(track);
+                }
+            }
+        }
+    }
     
     // Outros metodos
     /** "add" methods
-     * they add every new item (either genre or instrument) that wasn't
-     * already in the artist's list
+     * they add every new item that wasn't
+     * already in the list
      */
     public void addMusicalGenres(ArrayList<Util.MusicalGenres> newGenres){
         for(Util.MusicalGenres newGenre : newGenres){
@@ -170,6 +358,7 @@ public class Band {
         if(!this.members.contains(newMember)){
             this.members.add(newMember);
         }
+        this.setInstruments(); // refresh instruments
     }
     
     public void addMembers(ArrayList<Artist> newMembers) {
@@ -178,28 +367,65 @@ public class Band {
                 this.members.add(newMember);
             }
         }
+        this.setInstruments(); // refresh instruments
     }
     
     public void removeMember(Artist member) {
         this.members.remove(member);
+        this.setInstruments(); // refresh instruments
     }
 
     public void removeMember(int index){
         this.members.remove(index);
+        this.setInstruments(); // refresh instruments
     }
     
     public void removeMembers(ArrayList<Artist> members) {
         this.members.removeAll(members);
+        this.setInstruments(); // refresh instruments
     }
 
     public void removeMembers(int[] indexes){
         for(int index : indexes){
             this.members.remove(index);
         }
+        this.setInstruments(); // refresh instruments
     }
 
-    public void showinfo(){
-
+    public void addAlbums(ArrayList<Album> newAlbums){
+        for(Album newAlbum : newAlbums){
+            if(!this.albums.contains(newAlbum)){
+                this.albums.add(newAlbum);
+            }
+        }
+        this.setMusic(); // refreshes the tracks
+        this.setMusicalGenres(); // refreshes the genres
     }
+
+    public void addAlbum(Album newAlbum){
+        if(!this.albums.contains(newAlbum)){
+            this.albums.add(newAlbum);
+        }
+        this.setMusic(); // refreshes the tracks
+        this.setMusicalGenres(); // refreshes the genres
+    }
+
+    public void showInfo() {
+        System.out.println("\n\tNAME: " + this.getName());
+        System.out.println("\tORIGIN COUNTRY: " + this.getOriginCountry());
+        System.out.println("\tORIGIN YEAR: " + this.getOriginYear());
+        System.out.println("\tAGE: " + this.getAge() + " years old.");
+        System.out.println("\tMEMBERS:");
+        Util.printArrayList(this.members);
+        System.out.println("\tMUSICAL GENRES:");
+        Util.printArrayList(this.musicalGenres);
+        System.out.println("\tINSTRUMENTS:");
+        Util.printArrayList(this.instruments);
+        System.out.println("\tALBUMS:");
+        Util.printArrayList(this.albums);
+        System.out.println("\tMUSIC:");
+        Util.printArrayList(this.music);
+        System.out.println();
+    } // Prints the band's attributes
     
 }
