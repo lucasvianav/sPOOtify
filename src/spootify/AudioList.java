@@ -38,17 +38,17 @@ public abstract class AudioList {
     public void setLength(){
         this.length = 0;
         for (Music track : this.tracks){
-            this.length += track.getLenght();
+            this.length += track.getLength();
         }
     }
 
     //Other methods
     public void addLength(Music track){
-        this.length += track.getLenght();
+        this.length += track.getLength();
     }
 
     public void removeLength(Music track){
-        this.length -= track.getLenght();
+        this.length -= track.getLength();
     }
 
 

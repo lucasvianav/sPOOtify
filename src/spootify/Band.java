@@ -241,7 +241,7 @@ public class Band {
         return this.logo;
     }
 
-    public String getOriginYear() {
+    public String getOriginYearString() {
         /** for debugging purposes
          if(age > 0) {
          return this.YEAR.toString();
@@ -253,6 +253,20 @@ public class Band {
          */
 
         return this.YEAR.toString();
+    }
+
+    public LocalDate getOriginYear() {
+        /** for debugging purposes
+         if(age > 0) {
+         return this.YEAR.toString();
+         }
+         else if (age == -1){
+         System.out.println("No valid origin year was set.");
+         return null;
+         }
+         */
+
+        return this.YEAR;
     }
 
     public int getAge() {
@@ -413,7 +427,7 @@ public class Band {
     public void showInfo() {
         System.out.println("\n\tNAME: " + this.getName());
         System.out.println("\tORIGIN COUNTRY: " + this.getOriginCountry());
-        System.out.println("\tORIGIN YEAR: " + this.getOriginYear());
+        System.out.println("\tORIGIN YEAR: " + this.getOriginYearString());
         System.out.println("\tAGE: " + this.getAge() + " years old.");
         System.out.println("\tMEMBERS:");
         Util.printArrayList(this.members);

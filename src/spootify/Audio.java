@@ -5,60 +5,70 @@ import java.util.List;
 import javafx.scene.media.Media;
 
 public abstract class Audio {
-    
-    protected String name;
-    protected int length;
-    protected List<People> cast;
-    protected Media audio;
 
-    public Audio(String name, int length, List<People> cast, Media audio) {
-        this.name = name;
-        this.length = length;
-        this.audio = audio;
-        
-        this.cast = new ArrayList<>();
-        cast.forEach((people) -> {
-            this.cast.add(people);
-        });
+    // ATTRIBUTES ___________________________________________________________________________________________
+
+    protected final String NAME;
+    protected final int LENGTH;
+    protected final Media AUDIO;
+    protected final ArrayList<Featuring> FEAT;
+
+    // METHODS ______________________________________________________________________________________________
+
+    // No-feat constructor
+    public Audio(String name, Media audio) {
+        this.NAME = name;
+        this.LENGTH = (int) Math.round(audio.getDuration().toMinutes());
+        this.AUDIO = audio;
+
+        this.FEAT = null;
+    }
+
+    // Multiple feat constructor
+    public Audio(String name, Media audio, ArrayList<Featuring> feat) {
+        this.NAME = name;
+        this.LENGTH = (int) Math.round(audio.getDuration().toMinutes());
+        this.AUDIO = audio;
+
+        this.FEAT = new ArrayList<>();
+        this.FEAT.addAll(feat);
+    }
+
+    // Single feat constructor
+    public Audio(String name, Media audio, Featuring feat) {
+        this.NAME = name;
+        this.LENGTH = (int) Math.round(audio.getDuration().toMinutes());
+        this.AUDIO = audio;
+
+        this.FEAT = new ArrayList<>();
+        this.FEAT.add(feat);
     }
 
     // Getters
     public String getName() {
-        return name;
+        return this.NAME;
     }
 
-    public int getLenght() {
-        return length;
-    }
-
-    public List<People> getCast() {
-        return cast;
+    public int getLength() {
+        return this.LENGTH;
     }
 
     public Media getAudio() {
-        return audio;
+        return this.AUDIO;
     }
 
-    // Setters
-    public void setName(String name) {
-        this.name = name;
+    public ArrayList<Featuring> getFEAT(){
+        return this.FEAT;
     }
 
-    public void setLenght(int length) {
-        this.length = length;
+    // Other methods
+    public void showInfo(){
+        System.out.println("\tNAME: " + this.getName());
+        System.out.println("\tLENGTH: " + this.getLength());
+        if(this.FEAT != null) {
+            System.out.println("\tFEATURES:");
+            Util.printFeatures(this.FEAT);
+        }
     }
 
-    public void setCast(List<People> cast) {
-        while(this.cast.size() > 0)
-            this.cast.remove(0);
-        
-        cast.forEach((people) -> {
-            this.cast.add(people);
-        });
-    }
-
-    public void setAudio(Media audio) {
-        this.audio = audio;
-    }
-    
 }

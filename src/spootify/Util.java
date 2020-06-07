@@ -101,4 +101,25 @@ public class Util {
             System.out.println("The list is empty.");
         }
     }
+
+    public static void printFeatures(ArrayList<Featuring> list){
+        if (list != null && list.size() > 0) {
+            for (Featuring element : list) {
+                if (element.getFeaturing() instanceof Band) {
+                    System.out.println("\t- " + ((Band) element.getFeaturing()).getName());
+                }
+
+                else if (element.getFeaturing() instanceof Artist){
+                    System.out.println("\t- " + ((Artist) element.getFeaturing()).getName());
+                }
+
+                else if (element.getFeaturing() instanceof Podcaster){
+                    System.out.println("\t- " + ((Podcaster) element.getFeaturing()).getName());
+                }
+            }
+        }
+        else{
+            System.out.println("The list is empty.");
+        }
+    }
 }
