@@ -6,11 +6,6 @@ import javafx.scene.image.Image;
 
 public class Album extends AudioList {
 
-    /** FALTA IMPLEMENTAR
-     * produtor, gravadora, features (artistas convidados, daí ele puxa das músicas)
-     * criar classes single e EP, herdando daqui?
-     */
-
     // ATTRIBUTES ___________________________________________________________________________________________
 
     private final String NAME;
