@@ -32,6 +32,33 @@ public class Util {
             }
         };
     }
+
+    public enum Instruments {
+        FLAUTA {
+            @Override
+            public String toString() {
+                return "Flauta";
+            }
+        },
+        VIOLAO {
+            @Override
+            public String toString() {
+                return "Violão";
+            }
+        },
+        GUITARRA {
+            @Override
+            public String toString() {
+                return "Guitarra";
+            }
+        },
+        GAITA {
+            @Override
+            public String toString() {
+                return "Gaita";
+            }
+        };
+    }
     
     public enum Domain {
         FISICA_QUANTICA {
@@ -39,6 +66,14 @@ public class Util {
             public String toString() {
                 return "Física Quântica";
             }            
+        },
+        CIENCIA {
+            @Override
+            public String toString() { return "Ciência"; }
+        },
+        HUMOR {
+            @Override
+            public String toString() { return "Humor"; }
         };
     }
 
