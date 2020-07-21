@@ -17,7 +17,7 @@ public abstract class Audio {
     // No-feat constructor
     public Audio(String name, AudioInputStream audio) {
         this.NAME = name;
-        this.LENGTH = 0; // (int) Math.round(audio.getDuration().toMinutes());
+        this.LENGTH = (int) (1000 * audio.getFrameLength() / audio.getFormat().getFrameRate());
         this.AUDIO = audio;
 
         this.FEAT = null;
@@ -26,7 +26,7 @@ public abstract class Audio {
     // Multiple feat constructor
     public Audio(String name, AudioInputStream audio, ArrayList<Featuring> feat) {
         this.NAME = name;
-        this.LENGTH = 0; // (int) Math.round(audio.getDuration().toMinutes());
+        this.LENGTH = (int) (1000 * audio.getFrameLength() / audio.getFormat().getFrameRate());
         this.AUDIO = audio;
 
         this.FEAT = new ArrayList<>();
@@ -36,7 +36,7 @@ public abstract class Audio {
     // Single feat constructor
     public Audio(String name, AudioInputStream audio, Featuring feat) {
         this.NAME = name;
-        this.LENGTH = 0; // (int) Math.round(audio.getDuration().toMinutes());
+        this.LENGTH = (int) (1000 * audio.getFrameLength() / audio.getFormat().getFrameRate());
         this.AUDIO = audio;
 
         this.FEAT = new ArrayList<>();
