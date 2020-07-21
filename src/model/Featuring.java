@@ -1,4 +1,4 @@
-package spootify;
+package model;
 
 public class Featuring {
 
