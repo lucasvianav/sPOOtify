@@ -92,12 +92,8 @@ public class Playlist extends AudioList {
     }
 
     public void addTracks(ArrayList<Music> tracks) {
-        for(Music track : tracks){
-            if(!this.tracks.contains(track)){
-                this.tracks.add(track);
-                this.addLength(track);
-            }
-        }
+        for(Music track : tracks)
+            addTrack(track);
     }
     
     public void removeTrack(Music track) {

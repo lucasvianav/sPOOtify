@@ -24,12 +24,10 @@ public class Util {
             public String toString() {
                 return "Sertanejo";
             }
-        }, 
+        },
         PAGODE {
             @Override
-            public String toString() {
-                return "Pagode";
-            }
+            public String toString() { return "Pagode"; }
         };
     }
 
@@ -57,6 +55,18 @@ public class Util {
             public String toString() {
                 return "Gaita";
             }
+        },
+        BATERIA {
+            @Override
+            public String toString() {
+                return "Bateria";
+            }
+        },
+        TRIANGULO {
+            @Override
+            public String toString() {
+                return "Triângulo";
+            }
         };
     }
     
@@ -70,6 +80,14 @@ public class Util {
         CIENCIA {
             @Override
             public String toString() { return "Ciência"; }
+        },
+        TECNOLOGIA {
+            @Override
+            public String toString() { return "Tecnologia"; }
+        },
+        EDUCACIONAL {
+            @Override
+            public String toString() { return "Educacional"; }
         },
         HUMOR {
             @Override
