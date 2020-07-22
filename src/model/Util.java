@@ -1,11 +1,18 @@
 package model;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Util {
-    
+
+    // ATTRIBUTES ___________________________________________________________________________________________
+
+    static File accountsDatabase = new File("accounts.in");
+
+    // ENUMS ________________________________________________________________________________________________
+
     public enum MusicalGenres {
         ROCK {
             @Override
@@ -95,6 +102,9 @@ public class Util {
         };
     }
 
+    // METHODS ______________________________________________________________________________________________
+
+    // Checks if email is valid
     public static boolean isValidEmailAddress(String email) {
         String regex = "\\A[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}\\z";
         /** regex explanation
@@ -112,6 +122,7 @@ public class Util {
         return matcher.matches();
     }
 
+    // Checks if password if valid
     public static boolean isValidPassword(String password){
         String regex = "\\A(?=\\S*?[0-9])(?=\\S*?[a-z])(?=\\S*?[A-Z])(?=\\S*?[@#$%^&,+=/*~}{|!'])\\S{8,}\\z";
         /** regex explanation
