@@ -33,8 +33,6 @@ public class User extends People {
         {
             setEmail(email);
             setPassword(password);
-            Util.store2AccountDB(email);
-            Util.store2AccountDB(password);
         }
     }
 
@@ -89,5 +87,14 @@ public class User extends People {
         System.out.println("\tEMAIL: " + this.getEmail());
         System.out.println("\tPASSWORD: " + this.getPassword() + "\n");
     } // Prints the user's attributes
+
+    public static void createAccount(String name, String country, String birth, String email, String password) throws IOException {
+        Util.store2AccountDB(email);
+        Util.store2AccountDB(password);
+        Util.store2AccountDB(name);
+        Util.store2AccountDB(country);
+        Util.store2AccountDB(birth);
+
+    }
 
 }
