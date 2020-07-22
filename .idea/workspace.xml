@@ -55,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../USP/SCC0504 - POO/flipx" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -100,21 +100,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2006" y="178" key="#Notifications" timestamp="1591142081339">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-2006" y="178" key="#Notifications/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1591142081339" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1595367261230">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="-1573" y="277" key="FileChooserDialogImpl" timestamp="1595431477324">
+      <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
+    <state x="-1573" y="277" key="FileChooserDialogImpl/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595431477324" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367261230" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595367831025">
       <screen x="0" y="0" width="1920" height="1050" />
