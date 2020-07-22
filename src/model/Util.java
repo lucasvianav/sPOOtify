@@ -190,10 +190,10 @@ public class Util {
         }
     }
 
-    public static void store2AccountDB(String emlpwd) throws IOException {
-        FileWriter fileWriter = new FileWriter(accountsDatabase);
-        PrintWriter printWriter = new PrintWriter(fileWriter);
-        printWriter.println(emlpwd);
-        printWriter.close();
+    public static void store2AccountDB(String info) throws IOException {
+        FileWriter accountsWriter = new FileWriter(accountsDatabase, true);
+        PrintWriter accountsPrinter = new PrintWriter(accountsWriter);
+        accountsPrinter.append(info + "\n");
+        accountsPrinter.close();
     }
 }

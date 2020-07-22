@@ -1,13 +1,14 @@
 package model;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
     // MAIN _________________________________________________________________________________________________
 
-    public static void main(String args[]) throws FileNotFoundException {
+    public static void main(String args[]) throws IOException {
 
     }
 
