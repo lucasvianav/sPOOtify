@@ -1,6 +1,9 @@
 package model;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -185,5 +188,12 @@ public class Util {
         else{
             System.out.println("The list is empty.");
         }
+    }
+
+    public static void store2AccountDB(String emlpwd) throws IOException {
+        FileWriter fileWriter = new FileWriter(accountsDatabase);
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.println(emlpwd);
+        printWriter.close();
     }
 }

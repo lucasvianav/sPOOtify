@@ -1,6 +1,7 @@
 package model;
 
 import java.awt.Image;
+import java.io.IOException;
 
 public class User extends People {
 
@@ -25,24 +26,28 @@ public class User extends People {
     // METHODS ______________________________________________________________________________________________
 
     // Basic constructor
-    public User(String name, String country, String birth, String email, String password) {
+    public User(String name, String country, String birth, String email, String password) throws IOException {
         super(name, country, birth); // uses the parent's constructor
 
         // sets email and password
         {
             setEmail(email);
             setPassword(password);
+            Util.store2AccountDB(email);
+            Util.store2AccountDB(password);
         }
     }
 
     // Complete constructor
-    public User(String name, String country, String birth, String email, String password, Image avatar) {
+    public User(String name, String country, String birth, String email, String password, Image avatar) throws IOException {
         super(name, country, birth, avatar); // uses the parent's constructor
 
         // sets email and password
         {
             setEmail(email);
             setPassword(password);
+            Util.store2AccountDB(email);
+            Util.store2AccountDB(password);
         }
     }
 
