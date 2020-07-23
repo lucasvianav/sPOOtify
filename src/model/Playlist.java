@@ -13,6 +13,12 @@ public class Playlist extends AudioList {
 
     // METHODS ______________________________________________________________________________________________
 
+    // Empty-playlist constructor
+    public Playlist(User creator, String name){
+        this.setName(name);
+        this.CREATOR = creator;
+    }
+
     // Simple constructor
     public Playlist(User creator, String name, ArrayList<Music> tracks) {
         super(tracks);

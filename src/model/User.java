@@ -2,6 +2,7 @@ package model;
 
 import java.awt.Image;
 import java.io.IOException;
+import java.time.LocalDate;
 
 public class User extends People {
 
@@ -89,6 +90,20 @@ public class User extends People {
     } // Prints the user's attributes
 
     public static void createAccount(String name, String country, String birth, String email, String password) throws IOException {
+        // If the email is invalid, print error message and exit.
+        if (!Util.isValidEmailAddress(email)) {
+            System.out.println("The email entered is invalid.");
+            System.exit(-1);
+        }
+        // If the password is invalid, print error message and exit.
+        if(!Util.isValidPassword(password)) {
+             System.out.println("The password entered is invalid.");
+             System.exit(-1);
+            }
+        // If the birthdate is invalid, print error message and exit.
+        LocalDate.parse(birth);
+
+        // Store the other data
         Util.store2AccountDB(email);
         Util.store2AccountDB(password);
         Util.store2AccountDB(name);

@@ -11,6 +11,9 @@ public abstract class AudioList {
 
     // METHODS ______________________________________________________________________________________________
 
+    // Empty constructor
+    public AudioList(){}
+
     // Constructor
     public AudioList(ArrayList<Music> tracks){
         this.setTracks(tracks);

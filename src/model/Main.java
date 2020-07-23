@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     static User user;
+    static Playlist myPlaylist;
 
     // MAIN _________________________________________________________________________________________________
 
@@ -37,19 +38,30 @@ public class Main {
             User.createAccount(auxName,auxCountry,auxDate,auxMail,auxPassword);
         }
 
+        System.out.println("Você quer fazer login? Digite y para sim ou n para não.");
+        answer = sc.nextLine();
         System.out.println();
-        System.out.println("LOGIN");
-        System.out.println();
-        System.out.println("Seu email:");
-        String auxMaill = sc.nextLine();
-        System.out.println("Sua senha:");
-        String auxPasswordd = sc.nextLine();
-        System.out.println();
-        sc.close();
 
-        Boolean canLogin = login(auxMaill,auxPasswordd);
-        if(canLogin){
-            user.showInfo();
+        if(answer.equals("y")) {
+            System.out.println();
+            System.out.println("LOGIN");
+            System.out.println();
+            System.out.println("Seu email:");
+            String auxMaill = sc.nextLine();
+            System.out.println("Sua senha:");
+            String auxPasswordd = sc.nextLine();
+            System.out.println();
+            sc.close();
+
+
+            Boolean canLogin = login(auxMaill, auxPasswordd);
+            if (canLogin) {
+                user.showInfo();
+
+                myPlaylist = new Playlist(user,"Minha playlist");
+
+                System.out.println("Uma playlist com nome '" + myPlaylist.getName() + "' foi criada com sucesso para o usuário " + user.getName());
+            }
         }
     }
 
@@ -96,7 +108,7 @@ public class Main {
         }
 
         // Will be executed only if all the lines were read and the entered email wasn't found
-        System.out.println("There are no account with this email address.");
+        System.out.println("The email entered is incorrect.");
 
         return false;
     }
