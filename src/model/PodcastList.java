@@ -70,7 +70,7 @@ public class PodcastList {
     }
 
     public ArrayList<Podcast> getPodcasts(){
-        return this.podcasts
+        return this.podcasts;
     }
 
     // Setters

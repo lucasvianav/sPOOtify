@@ -20,19 +20,22 @@ public class LoginForm {
 
     private User user = null;
 
-    public LoginForm() {
+    private final JFrame currentFrame;
+
+    public LoginForm(JFrame frame) {
+        this.currentFrame = frame;
+
         btnLogin.addActionListener(listener -> {
             String email = txtUser.getText();
             String password = new String(passPassword.getPassword());
-
-            JOptionPane.showMessageDialog(null,
-                    String.format("As informações passadas foram:\n%s\n%s", email, password),
-                    "Informações do Login", JOptionPane.INFORMATION_MESSAGE);
 
             try {
                 if(login(email, password)) {
                     // send user object to another form
                     JOptionPane.showMessageDialog(null, "Bem-vindo " + user.getName() + "!");
+
+                    MainScreen.openWindow(user);
+                    this.currentFrame.dispose();
                 }
             } catch (IOException e) {
                 JOptionPane.showMessageDialog(null, "Erro ao acessar dados: " + e,
@@ -79,12 +82,13 @@ public class LoginForm {
         // Will be executed only if all the lines were read and the entered email wasn't found
         System.out.println("O email informado está incorreto!");
 
+        read.close();
         return false;
     }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Login do Sistema");
-        frame.setContentPane(new LoginForm().paneLogin);
+        frame.setContentPane(new LoginForm(frame).paneLogin);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(300, 200));
         frame.setLocationRelativeTo(null);
