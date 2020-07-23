@@ -21,8 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1b56feaf-5be5-4612-862e-66b82b9e8cf3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/LoginFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/LoginFrame$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/LoginFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/MainFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginFrame.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +53,55 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1cmmEGwrP9Q87vTARSPcjLfQgpD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="307" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../USP/SCC0504 - POO/flipx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.LoginForm">
+    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.LoginForm" />
+      <module name="sPOOtify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.LoginFrame" />
+      <module name="sPOOtify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.Main" />
       <module name="sPOOtify" />
@@ -99,6 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginForm" />
+        <item itemvalue="Application.LoginFrame" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MainFrame" />
         <item itemvalue="Application.Main" />
@@ -128,44 +174,59 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2006" y="178" key="#Notifications" timestamp="1591142081339">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-2006" y="178" key="#Notifications/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1591142081339" />
+    <state x="163" y="0" key="#Project_Structure" timestamp="1595507540983">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1595507540983" />
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1595510551564">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595510551564" />
     <state x="-1573" y="277" key="FileChooserDialogImpl" timestamp="1595431477324">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-1573" y="277" key="FileChooserDialogImpl/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595431477324" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367261230" />
-    <state width="1234" height="881" key="GridCell.Tab.0.bottom" timestamp="1595466118097">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595511989834">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595511989834" />
     <state width="1234" height="881" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595466118097" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367831025" />
-    <state width="1234" height="881" key="GridCell.Tab.0.center" timestamp="1595466118097">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595511989834">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595511989834" />
     <state width="1234" height="881" key="GridCell.Tab.0.center/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595466118097" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367831025" />
-    <state width="1234" height="881" key="GridCell.Tab.0.left" timestamp="1595466118097">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595511989834">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595511989834" />
     <state width="1234" height="881" key="GridCell.Tab.0.left/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595466118097" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367831025" />
-    <state width="1234" height="881" key="GridCell.Tab.0.right" timestamp="1595466118097">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595511989834">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595511989834" />
     <state width="1234" height="881" key="GridCell.Tab.0.right/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595466118097" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367831025" />
+    <state x="184" y="29" key="SettingsEditor" timestamp="1595511920907">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595511920907" />
     <state x="-2270" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595446091358">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
