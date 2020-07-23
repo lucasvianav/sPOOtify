@@ -6,16 +6,12 @@ import myutil.Util;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class LoginForm {
     private JPanel paneLogin;
     private JTextField txtUser;
     private JButton btnLogin;
-    private JLabel lblTitulo;
-    private JLabel lblUser;
-    private JLabel lblPassword;
     private JPasswordField passPassword;
 
     private User user = null;
@@ -34,6 +30,7 @@ public class LoginForm {
                     // send user object to another form
                     JOptionPane.showMessageDialog(null, "Bem-vindo " + user.getName() + "!");
 
+                    // open a new window and close the currentFrame
                     MainScreen.openWindow(user);
                     this.currentFrame.dispose();
                 }

@@ -1,6 +1,5 @@
 package view;
 
-import model.Main;
 import model.User;
 
 import javax.swing.*;
