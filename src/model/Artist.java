@@ -1,5 +1,7 @@
 package model;
 
+import myutil.Util;
+
 import java.awt.Image;
 import java.util.ArrayList;
 

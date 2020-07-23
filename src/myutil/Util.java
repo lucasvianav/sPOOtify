@@ -1,4 +1,9 @@
-package model;
+package myutil;
+
+import model.Artist;
+import model.Band;
+import model.Featuring;
+import model.Podcaster;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,7 +17,7 @@ public class Util {
 
     // ATTRIBUTES ___________________________________________________________________________________________
 
-    static File accountsDatabase = new File("accounts.in");
+    public static File accountsDatabase = new File("accounts.in");
 
     // ENUMS ________________________________________________________________________________________________
 

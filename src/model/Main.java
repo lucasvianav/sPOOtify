@@ -1,6 +1,7 @@
 package model;
 
-import java.io.FileNotFoundException;
+import myutil.Util;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -54,7 +55,7 @@ public class Main {
             sc.close();
 
 
-            Boolean canLogin = login(auxMaill, auxPasswordd);
+            boolean canLogin = login(auxMaill, auxPasswordd);
             if (canLogin) {
                 user.showInfo();
 
