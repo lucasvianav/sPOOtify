@@ -329,9 +329,9 @@ public class Band {
     public void setInstruments(){
         this.instruments.clear(); // clears the instruments ArrayList, leaving it empty
         for(Artist member : this.members){ // loops through the band's members in order to check their instruments
-            for(String instrument :  member.getInstruments()){ // loops through each member's instruments
-                if(!this.instruments.contains(instrument)){ // if the instrument isn't in the ArrayList already, add it
-                    this.instruments.add(instrument);
+            for(Util.Instruments instrument :  member.getInstruments()){ // loops through each member's instruments
+                if(!this.instruments.contains(instrument.toString())){ // if the instrument isn't in the ArrayList already, add it
+                    this.instruments.add(instrument.toString());
                 }
             }
         }

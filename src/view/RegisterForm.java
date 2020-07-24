@@ -3,6 +3,8 @@ package view;
 import model.User;
 import myutil.Util;
 
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.FocusAdapter;
@@ -58,6 +60,8 @@ public class RegisterForm {
                     } catch (IOException e) {
                         JOptionPane.showMessageDialog(null, "Erro ao acessar dados: " + e,
                                 "Erro ao criar conta", JOptionPane.ERROR_MESSAGE);
+                    } catch (UnsupportedAudioFileException | LineUnavailableException e) {
+                        e.printStackTrace();
                     }
                 }
             }

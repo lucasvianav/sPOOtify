@@ -21,25 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="1b56feaf-5be5-4612-862e-66b82b9e8cf3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/META-INF/sPOOtify.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(PODCAST) DASH - Jogabilidade/cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(PODCAST) DASH - Jogabilidade/dash109_voz.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/01. Circles.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/04. Good News.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/06. Everybody.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/07. Woods.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/09. That's On Me.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/01. Circles.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/04. Good News.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/06. Everybody.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/07. Woods.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/09. That's On Me.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Band.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Band.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

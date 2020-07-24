@@ -63,7 +63,7 @@ public class MainScreen {
             this.currentUser = user;
             this.allAlbuns = allAlbuns;
             this.allPodcasts = allPodcasts;
-            
+
             lblTopName.setText(this.currentUser.getName());
             tabMusicAlbum.setModel(this.albumTableModel);
 
@@ -91,7 +91,8 @@ public class MainScreen {
         // add musics and podcasts to the tabbedPane based in the current pane
         switch(tabPanes.getSelectedIndex()) {
             case 0: // musisc and albuns
-
+                for (Album album : allAlbuns)
+                    this.albumTableModel.addAudio(album);
                 break;
             case 1: // podcasts
 
