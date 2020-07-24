@@ -72,8 +72,10 @@ public class RegisterForm {
 
             @Override
             public void focusLost(FocusEvent e) {
-                txtBirthDate.setText("AAAA-MM-DD");
-                txtBirthDate.setForeground(Color.GRAY);
+                if(txtBirthDate.getText().isBlank()) {
+                    txtBirthDate.setText("AAAA-MM-DD");
+                    txtBirthDate.setForeground(Color.GRAY);
+                }
             }
         });
     }
