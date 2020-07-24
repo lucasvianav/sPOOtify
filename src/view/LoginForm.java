@@ -25,8 +25,8 @@ public class LoginForm {
 
     private final JFrame currentFrame;
 
-    private List<Album> allAlbuns;
-    private List<Podcast> allPodcasts;
+    private final List<Album> allAlbuns = new ArrayList<>();
+    private final List<Podcast> allPodcasts = new ArrayList<>();
 
     public LoginForm(JFrame frame) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         this.currentFrame = frame;
@@ -101,10 +101,7 @@ public class LoginForm {
     }
 
     public static AudioInputStream createAudioIS(String path) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
-        URL oUrl = new URL(path);
-        Clip oclip = AudioSystem.getClip();
-        AudioInputStream oStream = AudioSystem.getAudioInputStream(oUrl);
-        return oStream;
+        return AudioSystem.getAudioInputStream(new File(path));
     }
 
     public static ArrayList<Util.MusicalGenres> createGenreAL(Util.MusicalGenres genre){
@@ -132,11 +129,12 @@ public class LoginForm {
 
     private void setAllAudios() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         // Initializing tracks
-        Music circles1 = new Music("Circles",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/01.Circles.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles2 = new Music("Good News",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/04.Good_News.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles3 = new Music("Everybody",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/06.Everybody.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles4 = new Music("Woods",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/07.Woods.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles5 = new Music("That's On Me",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/09.That's_On_Me.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        /*
+        Music circles1 = new Music("Circles",createAudioIS("src/media/ALBUM_Circles-Mac_Miller/01_Circles.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles2 = new Music("Good News",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/04_Good_News.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles3 = new Music("Everybody",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/06_Everybody.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles4 = new Music("Woods",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/07_Woods.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles5 = new Music("That's On Me",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/09_That's_On_Me.mp3"),createGenreAL(Util.MusicalGenres.RAP));
         Artist macmiller = new Artist("Mac Miller", "USA", "1992-01-19",createGenreAL(Util.MusicalGenres.RAP),createInstrumentsAL(Util.Instruments.GUITARRA));
         ArrayList<Music> circleslist = new ArrayList<>();
         circleslist.add(circles1);
@@ -146,11 +144,11 @@ public class LoginForm {
         circleslist.add(circles5);
         // ALBUM CIRCLES
         Album circles = new Album("Circles",macmiller,"2019",createImage("./src/media/ALBUM_Circles-Mac_Miller/cover.jpg"),circleslist);
-
-        Music lofi1 = new Music("Lofi 1", createAudioIS("./src/media/ALBUM_music/lofi1.mp3"), createGenreAL(Util.MusicalGenres.POP));
-        Music lofi2 = new Music("Lofi 2", createAudioIS("./src/media/ALBUM_music/lofi2.mp3"), createGenreAL(Util.MusicalGenres.POP));
-        Music lofi3 = new Music("Lofi 3", createAudioIS("./src/media/ALBUM_music/lofi3.mp3"), createGenreAL(Util.MusicalGenres.POP));
-        Music lofi4 = new Music("Lofi 4", createAudioIS("./src/media/ALBUM_music/lofi4.mp3"), createGenreAL(Util.MusicalGenres.POP));
+        */
+        Music lofi1 = new Music("Lofi 1", createAudioIS("./src/media/ALBUM_music/lofi1.wav"), createGenreAL(Util.MusicalGenres.POP));
+        Music lofi2 = new Music("Lofi 2", createAudioIS("./src/media/ALBUM_music/lofi2.wav"), createGenreAL(Util.MusicalGenres.POP));
+        Music lofi3 = new Music("Lofi 3", createAudioIS("./src/media/ALBUM_music/lofi3.wav"), createGenreAL(Util.MusicalGenres.POP));
+        Music lofi4 = new Music("Lofi 4", createAudioIS("./src/media/ALBUM_music/lofi4.wav"), createGenreAL(Util.MusicalGenres.POP));
         Artist unknow = new Artist("Chilled Cow", "USA", "2000-01-01", createGenreAL(Util.MusicalGenres.POP), createInstrumentsAL(Util.Instruments.FLAUTA));
         ArrayList<Music> lofiList = new ArrayList<>();
         // Adding the musics
@@ -159,11 +157,11 @@ public class LoginForm {
         lofiList.add(lofi3);
         lofiList.add(lofi4);
         // ALBUM LOFI
-        Album lofi = new Album("Lofi Album", unknow, "2020", createImage("./src/media/ALBUM_music/cover.jpg"), lofiList);
+        Album lofi = new Album("Lofi Album", unknow, "2000-05-01", createImage("./src/media/ALBUM_music/cover.jpg"), lofiList);
 
-        allAlbuns.add(circles);
+        // allAlbuns.add(circles);
         allAlbuns.add(lofi);
-
+        /*
         String desc1 = "Quando uma busca simples para descobrir o primeiro jogo de vídeo game a usar uma voz te leva à história da obcessão humana por criar um ser artificial e a ponderar sobre o futuro da espécie, só há uma solução: gravar um DASH.\n" + "\n" + "André, Sushi e Rafa recebem Fernanda Dias, compositora e designer de som no Studio Pixel Punk, para juntos viajarem através desde as primeiras máquinas de voz até o lento surgimento dos sons feitos por zeros e uns que ouvimos hoje em dia.\n" + "\n" + "Quem inaugurou a voz num jogo? Como as limitações levaram às mais criativas soluções para que pudéssemos diálogos e canções pudessem existir onde não deviam? Como a popularização da mídia ótica mudou a preocupação da quantidade para a qualidade?\n" + "\n" + "Afinal, quais nossos usos favoritos de vozes em jogos? E o que o futuro nos guarda?";
         String desc2 = "Depois de um início muito focado no espaço sideral, uma vez que comidas passaram a dar as caras em jogos, sua presença neles tornou-se cada vez mais e mais indissociável.\n" + "\n" + "Seja emprestando seu significado imediatamente assimilável, seja como uma mecânica secundária, seja buscando representar o aspecto social de comer ou mesmo transformando o ato de cozinhar no objetivo principal, André Campos, Eduardo Sushi e Fernando Mucioli recebem Gus Lanzetta para discutir e explorar a história da representação da comida nos jogos.\n" + "\n" + "De onde vem a busca pela beleza na gastronomia? Como nossa compreensão alimentícia pode ser usada a favor dos jogos? O que é o “pós-comida”? E quais rangos dos jogos mais nos deixaram famintos?";
         Episode dashVoz = new Episode("DASH #109 - A Voz nos Jogos", createAudioIS("./src/media/PODCAST_DASH-Jogabilidade/dash109_voz.mp3"),desc1,createImage("./src/media/PODCAST_DASH-Jogabilidade/cover.png"));
@@ -195,7 +193,7 @@ public class LoginForm {
         Podcast sinapse = new Podcast("Sinapse", sinapse_Episodes, sinapse_hosts);
 
         this.allPodcasts.add(dash);
-        this.allPodcasts.add(sinapse);
+        this.allPodcasts.add(sinapse); */
     }
 
     public static void main(String[] args) throws LineUnavailableException, IOException, UnsupportedAudioFileException {

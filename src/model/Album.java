@@ -32,7 +32,7 @@ public class Album extends AudioList {
 
         // storing the musical genres from each track
         {
-            for(Music track : this.tracks){ // loops through the tracks
+            for(Music track : tracks){ // loops through the tracks
                 for(Util.MusicalGenres genre : track.getMUSICALGENRES()){ // loops through the genres from each track
                     if(!this.MUSICALGENRES.contains(genre)){ // if the album's genre arraylist doesn't contain that genre
                         this.MUSICALGENRES.add(genre); // add it

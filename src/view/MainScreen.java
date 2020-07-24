@@ -66,6 +66,7 @@ public class MainScreen {
 
             lblTopName.setText(this.currentUser.getName());
             tabMusicAlbum.setModel(this.albumTableModel);
+            tabMusicAlbum.setRowHeight(100);
 
             loadMedia();
         }
@@ -79,12 +80,13 @@ public class MainScreen {
                     int row = tabMusicAlbum.getSelectedRow(),
                             column = tabMusicAlbum.getSelectedColumn();
                     Album album = albumTableModel.getAlbumAt(row, column);
-                    JOptionPane.showMessageDialog(null, "Título do Álbum");
+                    if(album != null) {
+                        JOptionPane.showMessageDialog(null, "Título do Álbum: " + album.getName());
+                        AudioScreen.openWindow(album);
+                    }
                 }
             }
         });
-
-        loadMedia();
     }
 
     private void loadMedia() {

@@ -16,7 +16,8 @@ public abstract class AudioList {
 
     // Constructor
     public AudioList(ArrayList<Music> tracks){
-        this.setTracks(tracks);
+        this.tracks = new ArrayList<>();
+        this.tracks.addAll(tracks);
     }
     
     // Getters
