@@ -20,7 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b56feaf-5be5-4612-862e-66b82b9e8cf3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/view/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/META-INF/sPOOtify.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(PODCAST) DASH - Jogabilidade/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(PODCAST) DASH - Jogabilidade/dash109_voz.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/01. Circles.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/04. Good News.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/06. Everybody.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/07. Woods.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/09. That's On Me.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/(ÁLBUM) Circles - Mac Miller/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/music/lofi4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/MainScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,13 +205,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2006" y="178" key="#Notifications" timestamp="1591142081339">
@@ -216,37 +234,41 @@
     </state>
     <state x="-1601" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595546458910" />
     <state x="719" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595539306903" />
-    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1595602060547">
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1595618814244">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595602060547" />
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595618814244" />
+    <state x="305" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595615009562">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="305" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1595615009561" />
     <state x="-1573" y="277" key="FileChooserDialogImpl" timestamp="1595431477324">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-1573" y="277" key="FileChooserDialogImpl/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595431477324" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367261230" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595602301842">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595617812471">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595602301842" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595617812471" />
     <state width="2517" height="881" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595602301842">
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595617812471">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595602301842" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595617812471" />
     <state width="2517" height="881" key="GridCell.Tab.0.center/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595602301841">
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595617812471">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595602301841" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595617812471" />
     <state width="2517" height="881" key="GridCell.Tab.0.left/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595602301842">
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595617812471">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595602301842" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595617812471" />
     <state width="2517" height="881" key="GridCell.Tab.0.right/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
     <state x="184" y="29" key="SettingsEditor" timestamp="1595511920907">

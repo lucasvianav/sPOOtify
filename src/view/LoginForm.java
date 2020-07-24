@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class LoginForm {
@@ -24,7 +25,10 @@ public class LoginForm {
 
     private final JFrame currentFrame;
 
-    public LoginForm(JFrame frame) {
+    private List<Album> allAlbuns;
+    private List<Podcast> allPodcasts;
+
+    public LoginForm(JFrame frame) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         this.currentFrame = frame;
 
         btnLogin.addActionListener(listener -> {
@@ -37,7 +41,7 @@ public class LoginForm {
                     JOptionPane.showMessageDialog(null, "Bem-vindo " + user.getName() + "!");
 
                     // open a new window and close the currentFrame
-                    MainScreen.openWindow(user);
+                    MainScreen.openWindow(user, allAlbuns, allPodcasts);
                     this.currentFrame.dispose();
                 }
             } catch (IOException e) {
@@ -50,6 +54,8 @@ public class LoginForm {
             RegisterForm.openWindow();
             this.currentFrame.dispose();
         });
+
+        setAllAudios();
     }
 
     private boolean login(String email, String password) throws IOException {
@@ -115,8 +121,7 @@ public class LoginForm {
 
     public static Image createImage(String path) throws IOException {
         File sourceimage = new File(path);
-        Image image = ImageIO.read(sourceimage);
-        return image;
+        return ImageIO.read(sourceimage);
     }
 
     public static ArrayList<Util.Domain> createDomainAL(Util.Domain domain){
@@ -125,7 +130,7 @@ public class LoginForm {
         return domainAL;
     }
 
-    public static void main(String[] args) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
+    private void setAllAudios() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         // Initializing tracks
         Music circles1 = new Music("Circles",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/01.Circles.mp3"),createGenreAL(Util.MusicalGenres.RAP));
         Music circles2 = new Music("Good News",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/04.Good_News.mp3"),createGenreAL(Util.MusicalGenres.RAP));
@@ -155,6 +160,9 @@ public class LoginForm {
         lofiList.add(lofi4);
         // ALBUM LOFI
         Album lofi = new Album("Lofi Album", unknow, "2020", createImage("./src/media/ALBUM_music/cover.jpg"), lofiList);
+
+        allAlbuns.add(circles);
+        allAlbuns.add(lofi);
 
         String desc1 = "Quando uma busca simples para descobrir o primeiro jogo de vídeo game a usar uma voz te leva à história da obcessão humana por criar um ser artificial e a ponderar sobre o futuro da espécie, só há uma solução: gravar um DASH.\n" + "\n" + "André, Sushi e Rafa recebem Fernanda Dias, compositora e designer de som no Studio Pixel Punk, para juntos viajarem através desde as primeiras máquinas de voz até o lento surgimento dos sons feitos por zeros e uns que ouvimos hoje em dia.\n" + "\n" + "Quem inaugurou a voz num jogo? Como as limitações levaram às mais criativas soluções para que pudéssemos diálogos e canções pudessem existir onde não deviam? Como a popularização da mídia ótica mudou a preocupação da quantidade para a qualidade?\n" + "\n" + "Afinal, quais nossos usos favoritos de vozes em jogos? E o que o futuro nos guarda?";
         String desc2 = "Depois de um início muito focado no espaço sideral, uma vez que comidas passaram a dar as caras em jogos, sua presença neles tornou-se cada vez mais e mais indissociável.\n" + "\n" + "Seja emprestando seu significado imediatamente assimilável, seja como uma mecânica secundária, seja buscando representar o aspecto social de comer ou mesmo transformando o ato de cozinhar no objetivo principal, André Campos, Eduardo Sushi e Fernando Mucioli recebem Gus Lanzetta para discutir e explorar a história da representação da comida nos jogos.\n" + "\n" + "De onde vem a busca pela beleza na gastronomia? Como nossa compreensão alimentícia pode ser usada a favor dos jogos? O que é o “pós-comida”? E quais rangos dos jogos mais nos deixaram famintos?";
@@ -186,6 +194,11 @@ public class LoginForm {
         // PODCAST SINAPSE
         Podcast sinapse = new Podcast("Sinapse", sinapse_Episodes, sinapse_hosts);
 
+        this.allPodcasts.add(dash);
+        this.allPodcasts.add(sinapse);
+    }
+
+    public static void main(String[] args) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
         JFrame frame = new JFrame("Login do Sistema");
         frame.setContentPane(new LoginForm(frame).paneLogin);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -29,7 +29,7 @@ public class User extends People {
     // METHODS ______________________________________________________________________________________________
 
     // Basic constructor
-    public User(String name, String country, String birth, String email, String password) throws IOException {
+    public User(String name, String country, String birth, String email, String password) {
         super(name, country, birth); // uses the parent's constructor
 
         // sets email and password
