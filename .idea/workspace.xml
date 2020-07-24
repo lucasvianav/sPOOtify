@@ -21,8 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1b56feaf-5be5-4612-862e-66b82b9e8cf3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.in" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myutil/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myutil/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RegisterForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <recent name="C:\Users\joaom\Desktop\sPOOtify\src\media\music" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RegisterForm">
+  <component name="RunManager" selected="Application.LoginForm">
     <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.LoginForm" />
       <module name="sPOOtify" />
@@ -94,6 +97,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Main" />
+      <module name="sPOOtify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myutil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,19 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.Main" />
-      <module name="sPOOtify" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="myutil.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.RegisterForm" />
       <module name="sPOOtify" />
@@ -155,8 +158,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RegisterForm" />
         <item itemvalue="Application.LoginForm" />
+        <item itemvalue="Application.RegisterForm" />
         <item itemvalue="Application.MainScreen" />
         <item itemvalue="Application.LoginFrame" />
         <item itemvalue="Application.MainFrame" />
@@ -188,13 +191,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2006" y="178" key="#Notifications" timestamp="1591142081339">
@@ -209,42 +211,46 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1595514396889" />
+    <state x="463" y="47" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form" timestamp="1595600843407">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="47" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form/0.0.1366.768@0.0.1366.768" timestamp="1595600843407" />
     <state x="-1601" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595546458910">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-1601" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595546458910" />
     <state x="719" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595539306903" />
-    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1595540764021">
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1595602060547">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595540764021" />
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595602060547" />
     <state x="-1573" y="277" key="FileChooserDialogImpl" timestamp="1595431477324">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-1573" y="277" key="FileChooserDialogImpl/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595431477324" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367261230" />
-    <state width="2517" height="881" key="GridCell.Tab.0.bottom" timestamp="1595555008055">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595602173379">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595542941815" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595602173379" />
     <state width="2517" height="881" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="2517" height="881" key="GridCell.Tab.0.center" timestamp="1595555008055">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595602173379">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595542941815" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595602173379" />
     <state width="2517" height="881" key="GridCell.Tab.0.center/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="2517" height="881" key="GridCell.Tab.0.left" timestamp="1595555008055">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595602173379">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595542941815" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595602173379" />
     <state width="2517" height="881" key="GridCell.Tab.0.left/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="2517" height="881" key="GridCell.Tab.0.right" timestamp="1595555008055">
-      <screen x="-2560" y="0" width="2560" height="1040" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595602173379">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595542941815" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595602173379" />
     <state width="2517" height="881" key="GridCell.Tab.0.right/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
     <state x="184" y="29" key="SettingsEditor" timestamp="1595511920907">
@@ -255,6 +261,10 @@
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>
     <state x="-2270" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595446091358" />
+    <state x="453" y="264" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1595601921323">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="453" y="264" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1366.768@0.0.1366.768" timestamp="1595601921323" />
     <state x="-1949" y="244" key="run.anything.popup" timestamp="1595549725010">
       <screen x="-2560" y="0" width="2560" height="1040" />
     </state>

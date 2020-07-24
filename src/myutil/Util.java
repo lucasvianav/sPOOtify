@@ -9,7 +9,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -43,7 +49,7 @@ public class Util {
         PAGODE {
             @Override
             public String toString() { return "Pagode"; }
-        };
+        }
     }
 
     public enum Instruments {
@@ -82,7 +88,7 @@ public class Util {
             public String toString() {
                 return "Triângulo";
             }
-        };
+        }
     }
     
     public enum Domain {
@@ -107,7 +113,7 @@ public class Util {
         HUMOR {
             @Override
             public String toString() { return "Humor"; }
-        };
+        }
     }
 
     // METHODS ______________________________________________________________________________________________
@@ -147,7 +153,15 @@ public class Util {
         Matcher matcher = pattern.matcher(password);
 
         return matcher.matches();
+    }
 
+    public static boolean isValidDateFormat(String strDate) {
+        try {
+            LocalDate date = LocalDate.parse(strDate);
+            return Period.between(date, LocalDate.now()).getYears() > 0;
+        } catch(IllegalArgumentException | DateTimeParseException ex) {
+            return false;
+        }
     }
 
     public static ArrayList<?> arrayListCopy(ArrayList<?> list) {
@@ -198,7 +212,7 @@ public class Util {
     public static void store2AccountDB(String info) throws IOException {
         FileWriter accountsWriter = new FileWriter(accountsDatabase, true);
         PrintWriter accountsPrinter = new PrintWriter(accountsWriter);
-        accountsPrinter.append(info + "\n");
+        accountsPrinter.append(info).append("\n");
         accountsPrinter.close();
     }
 }
