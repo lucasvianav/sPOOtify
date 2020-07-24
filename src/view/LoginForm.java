@@ -13,6 +13,7 @@ public class LoginForm {
     private JTextField txtUser;
     private JButton btnLogin;
     private JPasswordField passPassword;
+    private JButton btnCreateAccount;
 
     private User user = null;
 
@@ -38,6 +39,11 @@ public class LoginForm {
                 JOptionPane.showMessageDialog(null, "Erro ao acessar dados: " + e,
                         "Erro no login", JOptionPane.ERROR_MESSAGE);
             }
+        });
+
+        btnCreateAccount.addActionListener(listener -> {
+            RegisterForm.openWindow();
+            this.currentFrame.dispose();
         });
     }
 
@@ -82,6 +88,8 @@ public class LoginForm {
         read.close();
         return false;
     }
+
+
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Login do Sistema");
