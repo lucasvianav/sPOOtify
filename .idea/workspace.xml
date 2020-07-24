@@ -21,17 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b56feaf-5be5-4612-862e-66b82b9e8cf3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/media/ALBUM_Circles-Mac_Miller/cover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/AudioScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sPOOtify/view/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sPOOtify/view/LoginForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/ALBUM_Circles-Mac_Miller/07.Woods (online-audio-converter.com).wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/ALBUM_Circles-Mac_Miller/07.Woods.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/ALBUM_Circles-Mac_Miller/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/ALBUM_Circles-Mac_Miller/cover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/AudioScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AudioScreen.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/AudioScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AudioScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.in" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.in" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,28 +229,28 @@
     </state>
     <state x="-1573" y="277" key="FileChooserDialogImpl/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595431477324" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595367261230" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595633838013">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595634809331">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595633838013" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595634809331" />
     <state width="2517" height="881" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595633838013">
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595634809331">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595633838013" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595634809331" />
     <state width="2517" height="881" key="GridCell.Tab.0.center/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595633838013">
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595634809330">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595633838013" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595634809330" />
     <state width="2517" height="881" key="GridCell.Tab.0.left/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595633838013">
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595634809331">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595633838013" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595634809331" />
     <state width="2517" height="881" key="GridCell.Tab.0.right/0.0.1536.824/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1595555008055" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1595531422491" />
     <state x="184" y="29" key="SettingsEditor" timestamp="1595511920907">
