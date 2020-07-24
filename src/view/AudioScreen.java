@@ -48,9 +48,13 @@ public class AudioScreen {
         btnPrevious.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(audioIndex > 0)
+                if(audioIndex > 0) {
                     audioIndex--;
-                play();
+                    clip.stop();
+                    clip.close();
+                    clip = null;
+                    play();
+                }
             }
         });
         btnPausePlay.addActionListener(new ActionListener() {
@@ -68,9 +72,13 @@ public class AudioScreen {
         btnNext.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(audioIndex < MAX_INDEX - 1)
+                if(audioIndex < MAX_INDEX - 1) {
                     audioIndex++;
-                play();
+                    clip.stop();
+                    clip.close();
+                    clip = null;
+                    play();
+                }
             }
         });
     }
@@ -82,7 +90,7 @@ public class AudioScreen {
     public static void openWindow(Album album) {
         JFrame frame = new JFrame("sPOOtify");
         frame.setContentPane(new AudioScreen(album).paneAudio);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setPreferredSize(new Dimension(600, 400));
         frame.setLocationRelativeTo(null);
         frame.pack();
@@ -131,11 +139,10 @@ public class AudioScreen {
     // Method to resume the audio
     public void resumeAudio() {
         if (status.equals("play")) {
-            System.out.println("Audio is already "+
-                    "being played");
+            System.out.println("Audio is already being played");
             return;
         }
-        clip.close();
+        // clip.close();
         clip.setMicrosecondPosition(currentFrame);
         this.play();
     }

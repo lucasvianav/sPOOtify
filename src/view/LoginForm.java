@@ -129,12 +129,11 @@ public class LoginForm {
 
     private void setAllAudios() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         // Initializing tracks
-        /*
-        Music circles1 = new Music("Circles",createAudioIS("src/media/ALBUM_Circles-Mac_Miller/01_Circles.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles2 = new Music("Good News",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/04_Good_News.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles3 = new Music("Everybody",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/06_Everybody.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles4 = new Music("Woods",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/07_Woods.mp3"),createGenreAL(Util.MusicalGenres.RAP));
-        Music circles5 = new Music("That's On Me",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/09_That's_On_Me.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles1 = new Music("Circles",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/01.Circles.wav"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles2 = new Music("Good News",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/04.Good_News.wav"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles3 = new Music("Everybody",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/06.Everybody.wav"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles4 = new Music("Woods",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/07.Woods.wav"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles5 = new Music("That's On Me",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/09.That's_On_Me.wav"),createGenreAL(Util.MusicalGenres.RAP));
         Artist macmiller = new Artist("Mac Miller", "USA", "1992-01-19",createGenreAL(Util.MusicalGenres.RAP),createInstrumentsAL(Util.Instruments.GUITARRA));
         ArrayList<Music> circleslist = new ArrayList<>();
         circleslist.add(circles1);
@@ -143,8 +142,7 @@ public class LoginForm {
         circleslist.add(circles4);
         circleslist.add(circles5);
         // ALBUM CIRCLES
-        Album circles = new Album("Circles",macmiller,"2019",createImage("./src/media/ALBUM_Circles-Mac_Miller/cover.jpg"),circleslist);
-        */
+        Album circles = new Album("Circles",macmiller,"2019-08-26",createImage("./src/media/ALBUM_Circles-Mac_Miller/cover.jpg"),circleslist);
         Music lofi1 = new Music("Lofi 1", createAudioIS("./src/media/ALBUM_music/lofi1.wav"), createGenreAL(Util.MusicalGenres.POP));
         Music lofi2 = new Music("Lofi 2", createAudioIS("./src/media/ALBUM_music/lofi2.wav"), createGenreAL(Util.MusicalGenres.POP));
         Music lofi3 = new Music("Lofi 3", createAudioIS("./src/media/ALBUM_music/lofi3.wav"), createGenreAL(Util.MusicalGenres.POP));
@@ -159,7 +157,7 @@ public class LoginForm {
         // ALBUM LOFI
         Album lofi = new Album("Lofi Album", unknow, "2000-05-01", createImage("./src/media/ALBUM_music/cover.jpg"), lofiList);
 
-        // allAlbuns.add(circles);
+        allAlbuns.add(circles);
         allAlbuns.add(lofi);
         /*
         String desc1 = "Quando uma busca simples para descobrir o primeiro jogo de vídeo game a usar uma voz te leva à história da obcessão humana por criar um ser artificial e a ponderar sobre o futuro da espécie, só há uma solução: gravar um DASH.\n" + "\n" + "André, Sushi e Rafa recebem Fernanda Dias, compositora e designer de som no Studio Pixel Punk, para juntos viajarem através desde as primeiras máquinas de voz até o lento surgimento dos sons feitos por zeros e uns que ouvimos hoje em dia.\n" + "\n" + "Quem inaugurou a voz num jogo? Como as limitações levaram às mais criativas soluções para que pudéssemos diálogos e canções pudessem existir onde não deviam? Como a popularização da mídia ótica mudou a preocupação da quantidade para a qualidade?\n" + "\n" + "Afinal, quais nossos usos favoritos de vozes em jogos? E o que o futuro nos guarda?";
