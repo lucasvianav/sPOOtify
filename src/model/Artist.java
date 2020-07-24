@@ -11,12 +11,12 @@ public class Artist extends People {
 
     private String artisticName;
     private ArrayList<Util.MusicalGenres> musicalGenres = new ArrayList<>();
-    private ArrayList<String> instruments = new ArrayList<>(); // maybe we should create an "instruments enum" in Util
+    private ArrayList<Util.Instruments> instruments = new ArrayList<>();
 
     // METHODS ______________________________________________________________________________________________
 
     // Basic constructor
-    public Artist(String name, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<String> instruments) {
+    public Artist(String name, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<Util.Instruments> instruments) {
         super(name, Country, birth);
 
         // sets musical genres and instruments
@@ -27,7 +27,7 @@ public class Artist extends People {
     }
 
     // Artistic name constructor
-    public Artist(String name, String artisticName, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<String> instruments) {
+    public Artist(String name, String artisticName, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<Util.Instruments> instruments) {
         super(name, Country, birth);
 
         // sets artistic name, musical genres and instruments
@@ -39,7 +39,7 @@ public class Artist extends People {
     }
 
     // Avatar constructor
-    public Artist(String name, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<String> instruments, Image avatar) {
+    public Artist(String name, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<Util.Instruments> instruments, Image avatar) {
         super(name, Country, birth, avatar);
 
         // sets musical genres and instruments
@@ -50,7 +50,7 @@ public class Artist extends People {
     }
 
     //Complete constructor
-    public Artist(String name, String artisticName, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<String> instruments, Image avatar) {
+    public Artist(String name, String artisticName, String Country, String birth, ArrayList<Util.MusicalGenres> musicalGenres, ArrayList<Util.Instruments> instruments, Image avatar) {
         super(name, Country, birth);
 
         // sets artistic name, musical genres, instruments and avatar
@@ -82,7 +82,7 @@ public class Artist extends People {
         return genresStrings;
     }
 
-    public ArrayList<String> getInstruments() {
+    public ArrayList<Util.Instruments> getInstruments() {
         return instruments;
     }
     
@@ -96,7 +96,7 @@ public class Artist extends People {
         this.musicalGenres.addAll(musicalGenres);
     }
 
-    public void setInstruments(ArrayList<String> instruments) {
+    public void setInstruments(ArrayList<Util.Instruments> instruments) {
         this.instruments.clear();
         this.instruments.addAll(instruments);
     }
@@ -120,15 +120,15 @@ public class Artist extends People {
         }
     }
 
-    public void addInstruments(ArrayList<String> newInstruments){
-        for(String newInstrument : newInstruments){
+    public void addInstruments(ArrayList<Util.Instruments> newInstruments){
+        for(Util.Instruments newInstrument : newInstruments){
             if(!this.instruments.contains(newInstrument)){
                 this.instruments.add(newInstrument);
             }
         }
     }
 
-    public void addInstrument(String newInstrument){
+    public void addInstrument(Util.Instruments newInstrument){
         if(!this.instruments.contains(newInstrument)){
             this.instruments.add(newInstrument);
         }

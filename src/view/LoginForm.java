@@ -1,11 +1,17 @@
 package view;
 
+import model.Album;
+import model.Artist;
+import model.Music;
 import model.User;
 import myutil.Util;
 
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LoginForm {
@@ -89,9 +95,38 @@ public class LoginForm {
         return false;
     }
 
+    public static AudioInputStream createAudioIS(String path) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
+        URL oUrl = new URL(path);
+        Clip oclip = AudioSystem.getClip();
+        AudioInputStream oStream = AudioSystem.getAudioInputStream(oUrl);
+        return oStream;
+    }
+
+    public static ArrayList<Util.MusicalGenres> createGenreAL(Util.MusicalGenres genre){
+        ArrayList<Util.MusicalGenres> genreAL = new ArrayList<>();
+        genreAL.add(genre);
+        return genreAL;
+    }
+
+    public static ArrayList<Util.Instruments> createInstrumentsAL(Util.Instruments instrument){
+        ArrayList<Util.Instruments> instrumentAL = new ArrayList<>();
+        instrumentAL.add(instrument);
+        return instrumentAL;
+    }
+
+    public static void main(String[] args) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
+        // Initializing tracks
+        Music circles1 = new Music("Circles",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/01.Circles.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles2 = new Music("Good News",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/04.Good_News.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles3 = new Music("Everybody",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/06.Everybody.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles4 = new Music("Woods",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/07.Woods.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Music circles5 = new Music("That's On Me",createAudioIS("./src/media/ALBUM_Circles-Mac_Miller/09.That's_On_Me.mp3"),createGenreAL(Util.MusicalGenres.RAP));
+        Artist macmiller = new Artist("Mac Miller", "USA", "1992-01-19",createGenreAL(Util.MusicalGenres.RAP),createInstrumentsAL(Util.Instruments.GUITARRA));
+        Album circles = new Album("Circles",macmiller,"2019",);
+
+        // public Album(String name, Artist artist, String releaseYear, Image cover, ArrayList<Music> tracks)
 
 
-    public static void main(String[] args) {
         JFrame frame = new JFrame("Login do Sistema");
         frame.setContentPane(new LoginForm(frame).paneLogin);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

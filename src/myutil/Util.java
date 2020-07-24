@@ -49,6 +49,10 @@ public class Util {
         PAGODE {
             @Override
             public String toString() { return "Pagode"; }
+        },
+        RAP {
+            @Override
+            public String toString() { return "Rap"; }
         }
     }
 

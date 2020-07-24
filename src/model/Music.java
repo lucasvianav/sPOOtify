@@ -11,36 +11,37 @@ public class Music extends Audio {
     // ATTRIBUTES ___________________________________________________________________________________________
 
     private final ArrayList<Util.MusicalGenres> MUSICALGENRES;
-    private final Album ALBUM; // assim a gente meio que entra num loop... pra criar álbum precisa declarar as músicas no construtor
-    // mas pra criar as músicas, precisa decalrar o álbum no construtor... não sei, tô confuso
+    private Album album;
 
     // METHODS ______________________________________________________________________________________________
 
-    // No-feat constructor
-    public Music(String name, AudioInputStream audio, Album album, List<Util.MusicalGenres> genres) {
+    // Album & No-feat constructor
+    public Music(String name, AudioInputStream audio, List<Util.MusicalGenres> genres) {
         super(name,  audio);
 
-        this.ALBUM = album;
         this.MUSICALGENRES = new ArrayList<>();
         this.MUSICALGENRES.addAll(genres);
     }
 
     // Multiple feat constructor
-    public Music(String name, AudioInputStream audio, Album album, List<Util.MusicalGenres> genres, ArrayList<Featuring> feat) {
+    public Music(String name, AudioInputStream audio, List<Util.MusicalGenres> genres, ArrayList<Featuring> feat) {
         super(name,  audio, feat);
 
-        this.ALBUM = album;
         this.MUSICALGENRES = new ArrayList<>();
         this.MUSICALGENRES.addAll(genres);
     }
 
     // Single feat constructor
-    public Music(String name, AudioInputStream audio, Album album, List<Util.MusicalGenres> genres, Featuring feat) {
+    public Music(String name, AudioInputStream audio, List<Util.MusicalGenres> genres, Featuring feat) {
         super(name,  audio, feat);
 
-        this.ALBUM = album;
         this.MUSICALGENRES = new ArrayList<>();
         this.MUSICALGENRES.addAll(genres);
+    }
+
+    // Setters
+    public void setAlbum(Album album){
+        this.album = album;
     }
 
     // Getters
@@ -49,7 +50,7 @@ public class Music extends Audio {
     }
 
     public Album getALBUM(){
-        return this.ALBUM;
+        return this.album;
     }
 
     // Other methods
