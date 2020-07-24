@@ -117,6 +117,10 @@ public class Util {
         HUMOR {
             @Override
             public String toString() { return "Humor"; }
+        },
+        GAMES {
+            @Override
+            public String toString() { return "Games"; }
         }
     }
 
