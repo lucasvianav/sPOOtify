@@ -28,7 +28,7 @@
           <grid id="9b39" binding="paneMusicsAlbuns" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Músicas e Álbuns"/>
+              <tabbedpane title="Álbuns"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -55,7 +55,7 @@
           <grid id="97f76" binding="paneMyPlaylists" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Minhas Playlists"/>
+              <tabbedpane title="Minha playlists"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -64,7 +64,7 @@
           <grid id="a24b9" binding="paneMyPodcasts" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Meus Podcasts"/>
+              <tabbedpane title="Meus podcasts"/>
             </constraints>
             <properties/>
             <border type="none"/>

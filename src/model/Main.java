@@ -5,7 +5,7 @@ import myutil.Util;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Main { // Classe utilizada unicamente para testar a criação de conta/login e criação da playlist a partir do usuário logado
 
     static User user;
     static Playlist myPlaylist;

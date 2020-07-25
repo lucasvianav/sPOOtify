@@ -44,7 +44,7 @@ public class RegisterForm {
                     JOptionPane.showMessageDialog(null, "O email informado é inválido!",
                             "Erro no preenchimento dos campos", JOptionPane.ERROR_MESSAGE);
                 } else if (!Util.isValidPassword(password)) {
-                    JOptionPane.showMessageDialog(null, "A senha informada é inválida!",
+                    JOptionPane.showMessageDialog(null, "A senha deve possuir um mínimo de 8 caracteres, com pelo menos uma letra maiúscula, uma minúscula, um número e um caractere especial.",
                             "Erro no preenchimento dos campos", JOptionPane.ERROR_MESSAGE);
                 } else if (!Util.isValidDateFormat(birthdate)) {
                     JOptionPane.showMessageDialog(null, "A data informada é inválida!",

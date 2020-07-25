@@ -74,7 +74,7 @@
         </constraints>
         <properties>
           <font size="14"/>
-          <text value="E-mail:"/>
+          <text value="Email:"/>
         </properties>
       </component>
       <component id="152a5" class="javax.swing.JTextField" binding="txtEmail">

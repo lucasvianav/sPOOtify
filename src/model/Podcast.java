@@ -1,6 +1,9 @@
 package model;
 
+import myutil.Util;
+
 import java.awt.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,8 +15,8 @@ public class Podcast {
     private int numberOfEpisodes;
     private ArrayList<Episode> episodes = new ArrayList<>();
     private ArrayList<Podcaster> hosts = new ArrayList<>();
+    private ArrayList<Util.Domain> genres = new ArrayList<>();
     private Image logo;
-    // gênero
 
     // METHODS ______________________________________________________________________________________________
 
@@ -33,8 +36,21 @@ public class Podcast {
     }
 
     // Genre constructor
+    public Podcast(String name, ArrayList<Episode> episodes, ArrayList<Podcaster> hosts, ArrayList<Util.Domain> genres) {
+        this.name = name;
+        this.setEpisodes(episodes);
+        this.setHosts(hosts);
+        this.setGenres(genres);
+    }
 
     // Complete constructor
+    public Podcast(String name, Image logo, ArrayList<Episode> episodes, ArrayList<Podcaster> hosts, ArrayList<Util.Domain> genres) {
+        this.name = name;
+        this.logo = logo;
+        this.setEpisodes(episodes);
+        this.setHosts(hosts);
+        this.setGenres(genres);
+    }
 
     // Getters
     public String getName() {
@@ -57,6 +73,10 @@ public class Podcast {
         return this.numberOfEpisodes;
     }
 
+    public ArrayList<Util.Domain> getGenres(){
+        return this.genres;
+    }
+
     // Setters
     public void setName(String name) {
         this.name = name;
@@ -75,6 +95,11 @@ public class Podcast {
 
     public void setNumberOfEpisodes(){
         this.numberOfEpisodes = this.episodes.size();
+    }
+
+    public void setGenres(ArrayList<Util.Domain> genres){
+        this.genres.clear();
+        this.genres.addAll(genres);
     }
 
     // Other methods
